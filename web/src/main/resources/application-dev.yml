@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    #多数据源配置
+    url: jdbc:mysql://localhost:3306/ddd?useSSL=false&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=UTF-8&characterSetResults=UTF-8&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    max-active: 5
+    initial-size: 5
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show: true
+swagger:
+  base-package: com.ljk.interfaces
+  enabled: true

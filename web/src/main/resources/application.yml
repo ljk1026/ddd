@@ -1,0 +1,5 @@
+server:
+  port: 8082
+spring:
+  profiles:
+    active: dev #激活对应的文档块
